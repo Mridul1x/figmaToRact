@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import CartItem from "../../components/CartItem";
-import OrderSummary from "../../components/OrderSummary";
+import CartItem from "../../components/CartItem.jsx";
+import OrderSummary from "../../components/OrderSummary.jsx";
 
 const Cart = () => {
   const initialItems = [
@@ -44,22 +44,35 @@ const Cart = () => {
     );
   };
 
-;
+  const subtotal = items.reduce(
+    (acc, item) => acc + item.price * item.quantity,
+    0
+  );
+  const discount = subtotal * 0.2;
+  const deliveryFee = 15;
+  const total = subtotal - discount + deliveryFee;
 
   return (
-    <div className="cart-container">
-      <div className="cart-items">
-        {items.map((item) => (
-          <CartItem key={item.id} item={item} updateQuantity={updateQuantity} />
-        ))}
+    <section >
+      <h1 className="section-title">YOUR CART</h1>
+      <div className="cart-container">
+        <div className="cart-items">
+          {items.map((item) => (
+            <CartItem
+              key={item.id}
+              item={item}
+              updateQuantity={updateQuantity}
+            />
+          ))}
+        </div>
+        <OrderSummary
+          subtotal={subtotal}
+          discount={discount}
+          deliveryFee={deliveryFee}
+          total={total}
+        />
       </div>
-      <OrderSummary
-        subtotal={subtotal}
-        discount={discount}
-        deliveryFee={deliveryFee}
-        total={total}
-      />
-    </div>
+    </section>
   );
 };
 

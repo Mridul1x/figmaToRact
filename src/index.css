@@ -1,3 +1,4 @@
+@import url(https://db.onlinewebfonts.com/c/f1fcc5aed1e20fc0cdb9f8a7573625bd?family=Integral+CF+Regular);
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   /* line-height: 1.5;
@@ -8,27 +9,40 @@
   -moz-osx-font-smoothing: grayscale;
 }
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: "Integral CF Regular";
+  display: flex;
+  justify-content: center;
+  margin: auto 0;
+  align-items: center;
+  font-size: 40px;
+  padding-top: 70px;
 }
 
 .cart-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  padding: 20px;
-  margin: 0 auto;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
   gap: 20px;
 }
 
 .cart-items {
-  width: 715px;
+  width: 100%;
+  max-width: 715px;
 }
 
 @media (min-width: 768px) {
   .cart-container {
     flex-direction: row;
+  }
+
+  .order-summary {
+    width: 30%;
   }
 }
 
@@ -66,12 +80,15 @@ body {
 .item-quantity {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
-.cart-right {
-  display: flex;
-}
+
 .item-quantity button {
   margin: 0 5px;
+  padding: 5px 10px;
+  background-color: #ddd;
+  border: none;
+  cursor: pointer;
 }
 
 .remove-item {
@@ -79,8 +96,9 @@ body {
   border: none;
   cursor: pointer;
   color: red;
-  width: 20px;
-  height: 20px;
+  margin-left: auto;
+  width: 25px;
+  height: 25px;
 }
 
 @media (max-width: 767px) {
@@ -92,5 +110,82 @@ body {
   .item-details {
     margin-left: 0;
   }
+
+  .item-quantity {
+    margin-top: 10px;
+  }
 }
 
+.cart-right {
+  display: flex;
+}
+
+.order-summary {
+  width: 505px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.order-summary h2,
+.order-summary h3 {
+  margin-bottom: 20px;
+}
+
+.order-summary p {
+  margin: 10px 0;
+}
+
+.order-summary input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.order-summary button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.checkout {
+  background-color: #00c853;
+}
+.span {
+  font-size: large;
+  font-weight: 600;
+  color: black;
+}
+.span1 {
+  font-weight: bold;
+}
+.p1 {
+  display: flex;
+  justify-content: space-between;
+  color: #0000008b;
+}
+.h3 {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  padding-top: 22.5px;
+}
+.hr {
+  margin-top: 20px;
+  color: #00000004;
+}
+.discount {
+  color: red;
+}
+
+@media (min-width: 768px) {
+  .order-summary {
+    width: 30%;
+    margin-top: 0;
+  }
+}
