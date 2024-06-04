@@ -11,6 +11,8 @@
 body {
   margin: 0 auto;
 }
+
+/* cart css */
 .cart {
   padding-bottom: 80px;
 }
@@ -56,6 +58,8 @@ body {
     width: 30%;
   }
 }
+
+/* cart items css */
 
 .cart-item {
   display: flex;
@@ -131,6 +135,8 @@ body {
   display: flex;
 }
 
+/* order summary css  */
+
 .order-summary {
   width: 505px;
   padding: 20px;
@@ -200,7 +206,7 @@ body {
     margin-top: 0;
   }
 }
-/* navbar  */
+/* navbar css */
 
 .navbar {
   display: flex;
@@ -304,7 +310,7 @@ body {
   }
 }
 
-/* topNabvar */
+/* topNabvar css*/
 .top-navbar {
   background: #000000;
   padding: 1px;
@@ -318,7 +324,7 @@ body {
   text-decoration: underline;
 }
 
-/* footer  */
+/* footer  css*/
 .footer {
   position: relative;
   padding: 20px;
@@ -430,5 +436,4 @@ body {
 
 .shop-name {
   font-family: "Integral CF Regular";
-
 }

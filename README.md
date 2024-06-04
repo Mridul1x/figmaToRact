@@ -1,8 +1,37 @@
-# React + Vite
+# E-commerce Website Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is an e-commerce website template built using React.js for the frontend. It includes features such as adding items to the cart, updating cart quantities, and displaying an order summary.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Adding items to the cart
+- Updating cart quantities
+- Displaying an order summary
+- Total price calculation based on quantity and discount
+
+## Setup and Installation
+
+To run this project locally, follow these steps:
+
+- Clone the repository to your local machine:
+- Install dependencies:
+
+```bash
+  cd figmaToRact
+  npm install
+```
+
+- Start the development server:
+
+```bash
+  npm run dev
+```
+
+- Open your browser and visit [http://localhost:5173](http://localhost:5173) to view the project.
+
+## Additional Notes
+
+- Make sure you have Node.js and npm installed on your machine before running the project.
+- This project uses React.js for the frontend.
+
+Happy coding! 🚀
