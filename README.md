@@ -27,7 +27,11 @@ To run this project locally, follow these steps:
   npm run dev
 ```
 
-- Open your browser and visit [http://localhost:5173](http://localhost:5173) to view the project.
+- Open your browser and visit [http://localhost:5173](http://localhost:5173) to view the project locally.
+
+## Live Link
+
+Please visit [Live Link](https://figma-to-react-js.vercel.app/) to view the site in deployment version
 
 ## Additional Notes
 
