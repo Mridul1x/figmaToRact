@@ -53,7 +53,8 @@ const Cart = () => {
   const total = subtotal - discount + deliveryFee;
 
   return (
-    <section >
+    <section className="cart">
+      <p className="routing-title1">Home {">"} Cart</p>
       <h1 className="section-title">YOUR CART</h1>
       <div className="cart-container">
         <div className="cart-items">
