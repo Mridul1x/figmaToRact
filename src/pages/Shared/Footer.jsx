@@ -5,7 +5,9 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-subscribe">
         <div>
-          <h3>STAY UP TO DATE ABOUT OUR LATEST OFFERS</h3>
+          <h3 className="footer-title">
+            STAY UP TO DATE ABOUT OUR LATEST OFFERS
+          </h3>
         </div>
         <div className="footer-input">
           <input type="email" placeholder="Enter your email address" />
@@ -21,7 +23,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="footer-links">
-          <div>
+          <div className="help1">
             <h4>COMPANY</h4>
             <ul>
               <li>
@@ -38,7 +40,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="help">
             <h4>HELP</h4>
             <ul>
               <li>
@@ -57,7 +59,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-links">
-          <div>
+          <div className="help2">
             <h4>FAQ</h4>
             <ul>
               <li>
@@ -74,7 +76,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="help3">
             <h4>RESOURCES</h4>
             <ul>
               <li>
